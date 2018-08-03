@@ -93,6 +93,8 @@ deploy:
   provider: releases
   api_key:
     secure: zJNkb9mP2R/LQ7ITKYFcTJUOkdq4rK66wj34uXqzSKL3y/u775+yNNTIfVnnX1ItwJcMvOf6YOkhHqk7IvwBXWEpQDhiyE6UZPAD48UA8yH/G1toFVACmWyyZEugx9HkJLRJ+tZqro39SqTHEFwXvbr1O8pznXZzBQRKxny2s6PHiS6ZkbWIQTMfXijZftX8m3RP02a6Tya1W3wz1u0NgiqP09zxQwQFEAd522YVp8DXyiPLxd4WCwg6C6CkMOB5N/KxxwCQHhGwyjoUO753re5S5MsLAMcoZcghs7N+q1D2+1rr5zL8hy7rE5+x3vJBq5XNGZ9VNgXK2KXA+ZrHqjEJt32nnbpxDr1YTKNep92R5fziMg+G/nqR3a7Op3w0WEc5xkG/hmHAvQlZo0Nk0O3JcxOg0+9tjF3D6fDPRKZpxS8H87NDliALC4Ku/HYEqswb7KzCVHekkJcSSroQD24PUg28XCatPx08jqlmWY/LcRMWFbG9UvgGdd53h0qPNXtZgNQsuC5NQYqq+FFSCTggxg98BvmTAK6nHeWqfx6wFT2z0xftttC41uSvwI45ZLJqO6XXKcpB6IvDpiY2l6KCqRKXxhj/C71r1dToJWEGG/JwyH3iJ+pQIGY/a7/bD4GiPsPI2rv1BKelW0Xz16LNoq8XW7NqIPY5by47UOg=
-  file: "$HOST.tar.gz"
+  skip_cleanup: true
+  file_glob: true
+  file: $HOST.tar.gz
   on:
     repo: Saci-de-bani/onecommasdev
