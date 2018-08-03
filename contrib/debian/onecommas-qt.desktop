@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OneCommas
+Comment=OneCommas P2P Cryptocurrency
+Comment[fr]=OneCommas, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=OneCommas, eşten eşe kriptografik sanal para birimi
+Exec=onecommas-qt %u
+Terminal=false
+Type=Application
+Icon=onecommas128
+MimeType=x-scheme-handler/onecommas;
+Categories=Office;Finance;

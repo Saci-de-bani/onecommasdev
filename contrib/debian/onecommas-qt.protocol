@@ -1,0 +1,11 @@
+[Protocol]
+exec=onecommas-qt '%u'
+protocol=onecommas
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

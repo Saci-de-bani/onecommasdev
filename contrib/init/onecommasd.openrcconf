@@ -1,0 +1,26 @@
+# /etc/conf.d/onecommasd: config file for /etc/init.d/onecommasd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/onecommas/onecommas.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/onecommasd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/onecommasd.pid"
+
+# Where to write onecommasd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/onecommasd"
+
+# User and group to own onecommasd process
+#BITCOIND_USER="onecommas"
+#BITCOIND_GROUP="onecommas"
+
+# Path to onecommasd executable
+#BITCOIND_BIN="/usr/bin/onecommasd"
+
+# Nice value to run onecommasd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

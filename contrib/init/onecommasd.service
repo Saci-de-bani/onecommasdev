@@ -1,0 +1,26 @@
+[Unit]
+Description=OneCommas's distributed currency daemon
+After=network.target
+
+[Service]
+User=onecommas
+Group=onecommas
+
+Type=forking
+PIDFile=/var/lib/onecommasd/onecommasd.pid
+
+ExecStart=/usr/bin/onecommasd -daemon -pid=/var/lib/onecommasd/onecommasd.pid \
+          -conf=/etc/onecommas/onecommas.conf -datadir=/var/lib/onecommasd
+
+ExecStop=-/usr/bin/onecommas-cli -conf=/etc/onecommas/onecommas.conf \
+         -datadir=/var/lib/onecommasd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
